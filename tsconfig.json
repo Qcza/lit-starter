@@ -3,7 +3,7 @@
     "target": "es2020",
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": ["dom", "esnext"],github.c
+    "lib": ["dom", "esnext"],
     "allowJs": true,
     "isolatedModules": true,
     "esModuleInterop": true,
