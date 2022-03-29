@@ -1,0 +1,43 @@
+{
+  "name": "lit-starter",
+  "version": "0.0.1",
+  "description": "Lit starter",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "start": "wds --node-resolve --open --watch",
+    "test": "wtr",
+    "test:watch": "npm run test -- --watch",
+    "lint": "npm run prettier && npm run lint:lit-analyzer && npm run lint:eslint",
+    "lint:lit-analyzer": "lit-analyzer",
+    "lint:eslint": "eslint src/ --ext .ts,.js",
+    "prettier": "prettier src/**/*.ts --write"
+  },
+  "keywords": [
+    "lit",
+    "lit-element",
+    "starter",
+    "scaffolding"
+  ],
+  "author": "Qcza",
+  "license": "ISC",
+  "devDependencies": {
+    "@chialab/esbuild-plugin-html": "^0.15.9",
+    "@open-wc/dev-server-hmr": "^0.1.2",
+    "@open-wc/testing": "^3.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "@web/dev-server": "^0.1.30",
+    "@web/dev-server-esbuild": "^0.2.16",
+    "@web/test-runner": "^0.13.27",
+    "esbuild": "^0.14.27",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "lit-analyzer": "^1.2.1",
+    "prettier": "2.6.0",
+    "ts-lit-plugin": "^1.2.1",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "lit": "^2.2.1"
+  }
+}
