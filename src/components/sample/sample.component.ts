@@ -16,3 +16,9 @@ export class SampleComponent extends LitElement {
     return html`<p>Hello ${this.name}!</p>`;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'sample-component': SampleComponent;
+  }
+}
